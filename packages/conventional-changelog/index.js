@@ -5,7 +5,7 @@ var conventionalChangelogPresetLoader = require('conventional-changelog-preset-l
 
 function conventionalChangelog (options, context, gitRawCommitsOpts, parserOpts, writerOpts) {
   options.warn = options.warn || function () {}
-
+  console.log('------- HAHAHAHAHAHA conventionalChangelog')
   if (options.preset) {
     try {
       options.config = conventionalChangelogPresetLoader(options.preset.toLowerCase())

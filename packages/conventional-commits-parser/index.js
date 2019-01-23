@@ -6,6 +6,7 @@ var through = require('through2')
 var _ = require('lodash')
 
 function assignOpts (options) {
+  console.log('------------- YOYOOY -----');
   options = _.extend({
     headerPattern: /^(\w*)(?:\(([\w$.\-* ]*)\))?: (.*)$/,
     headerCorrespondence: ['type', 'scope', 'subject'],
